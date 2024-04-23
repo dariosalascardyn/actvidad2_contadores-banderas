@@ -1,0 +1,55 @@
+#"creacion menu"
+banderamenu = True
+
+usuario1= None 
+usuario2=None 
+usuario3=None
+contrasena1= None 
+contrasena2=None 
+contrasena3= None
+
+
+while banderamenu:
+    print("1.- iniciar sesion\n")
+    print("2.- registrar usuario\n")
+    print("3.- salir\n")
+    opcion = int(input("ingrese opcion\n"))
+    if opcion == 1:
+       print("***inicio de sesion***")
+       usuario = input("ingrese usuario\t")
+       contraseña = input("ingrese contraseña:\t")
+        if usuario1 == None or usuario2 == None or usuario3 == None and contrasena1 == None or contrasena2 == None or contrasena3 == None:
+           print("no existen usuarios para ingresar\n")
+        if usuario1 == {usuario1} and contrasena1 == {contrasena1}:
+            print("ingreso a cuenta exitoso!!")
+        if usuario2 == {usuario2} and contrasena2 == {contrasena2}:
+            print("ingreso a cuenta exitoso!!")
+        if usuario3 == {usuario3} and contrasena3 == {contrasena3}:
+            print("ingreso a cuenta exitoso!!")
+        else:
+            print("usuario o contraseña invalido!")    
+    elif opcion == 2:
+        print("***registrar nuevo usuario***\n")
+        usuario1 = input("ingrese nombre de usuario:\n")
+        contrasena1 = input("ingrese contraseña\n")
+        print(f"usuario 1: {usuario1}\n contraseña 1: {contrasena1}\n")
+        opcion = int(input("felicidades haz creado tu usuario!!\n ¿quieres crear uno nuevo?\n 1.-si\n 2.-no\n"))
+        if opcion == 1:
+            print("***registrar nuevo usuario***\n")
+            usuario2 = input("ingrese nombre de usuario:\n")
+            contrasena2 = input("ingrese contraseña\n")
+            print(f"usuario 2: {usuario2}\n contraseña 2: {contrasena2}\n")
+            opcion = int(input("felicidades haz creado tu usuario!!\n ¿quieres crear uno nuevo?\n 1.-si\n 2.-no\n"))
+        if opcion == 1:
+            print("***registrar nuevo usuario***\n")
+            usuario3 = input("ingrese nombre de usuario:\n")
+            contrasena3 = input("ingrese contraseña\n")
+            print(f"usuario 3: {usuario3}\n contraseña 3: {contrasena3}\n")
+            print("felicidades haz creado tu usuario!!\n")
+        else:
+            print("felicidades haz creado tu usuario!!\n")   
+    elif opcion == 3:
+        print("opcion 3")
+        print("hasta pronto")
+    else:
+        print("opcion ingresada no valida")    
